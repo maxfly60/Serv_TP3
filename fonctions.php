@@ -1,5 +1,15 @@
 <?php
 
+// EXERCICE 1 - Partie PHP
+
+/*
+    Afin de tester la route :
+
+        localhost/username/test/Adrield     ->      fonctionne, artiste présent dans la BDD, retourne {"exists":true,"idUser":"4915"}
+
+        localhost/username/test/maxfly      ->      ne fonctionne pas, artiste pas présent dans la BDD, retourne {"exists":false}
+
+*/
 Flight::route('GET /username/test/@name', function($name){
     $db = Flight::get('db');
     $exists = FALSE;
