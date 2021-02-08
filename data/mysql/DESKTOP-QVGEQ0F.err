@@ -1,0 +1,22 @@
+2020-12-02T14:52:02.300614Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2020-12-02T14:52:02.300799Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2020-12-02T14:52:02.300808Z 0 [Note] C:\laragon\bin\mysql\mysql-5.7.24-winx64\bin\mysqld (mysqld 5.7.24) starting as process 20020 ...
+2020-12-02T14:52:02.323500Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2020-12-02T14:52:02.324619Z 0 [Note] InnoDB: Uses event mutexes
+2020-12-02T14:52:02.325280Z 0 [Note] InnoDB: _mm_lfence() and _mm_sfence() are used for memory barrier
+2020-12-02T14:52:02.325776Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2020-12-02T14:52:02.326422Z 0 [Note] InnoDB: Number of pools: 1
+2020-12-02T14:52:02.326811Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2020-12-02T14:52:02.329171Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2020-12-02T14:52:02.334468Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2020-12-02T14:52:02.352068Z 0 [ERROR] InnoDB: Only one log file found.
+2020-12-02T14:52:02.352433Z 0 [ERROR] InnoDB: Plugin initialization aborted with error not found
+2020-12-02T14:52:02.554847Z 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2020-12-02T14:52:02.555310Z 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2020-12-02T14:52:02.555787Z 0 [ERROR] Failed to initialize builtin plugins.
+2020-12-02T14:52:02.556181Z 0 [ERROR] Aborting
+
+2020-12-02T14:52:02.556439Z 0 [Note] Binlog end
+2020-12-02T14:52:02.556714Z 0 [Note] Shutting down plugin 'CSV'
+2020-12-02T14:52:02.563203Z 0 [Note] C:\laragon\bin\mysql\mysql-5.7.24-winx64\bin\mysqld: Shutdown complete
+

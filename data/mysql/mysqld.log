@@ -1,0 +1,74 @@
+2020-10-06T07:18:57.973055Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2020-10-06T07:18:57.973850Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2020-10-06T07:18:57.973877Z 0 [Note] C:\Programmes\laragon\bin\mysql\mysql-5.7.24-winx64\bin\mysqld (mysqld 5.7.24) starting as process 4956 ...
+2020-10-06T07:30:58.560775Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2020-10-06T07:30:58.561449Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2020-10-06T07:30:58.561464Z 0 [Note] C:\Programmes\laragon\bin\mysql\mysql-5.7.24-winx64\bin\mysqld (mysqld 5.7.24) starting as process 1016 ...
+2020-10-06T07:36:24.217692Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2020-10-06T07:36:24.218268Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2020-10-06T07:36:24.218284Z 0 [Note] C:\Programmes\laragon\bin\mysql\mysql-5.7.24-winx64\bin\mysqld (mysqld 5.7.24) starting as process 3016 ...
+2020-12-02T13:09:51.875709Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2020-12-02T13:09:51.876645Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2020-12-02T13:09:51.876676Z 0 [Note] C:\laragon\bin\mysql\mysql-5.7.24-winx64\bin\mysqld (mysqld 5.7.24) starting as process 6920 ...
+2020-12-02T13:11:04.740643Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2020-12-02T13:11:04.741335Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2020-12-02T13:11:04.741361Z 0 [Note] C:\laragon\bin\mysql\mysql-5.7.24-winx64\bin\mysqld (mysqld 5.7.24) starting as process 16936 ...
+2020-12-02T13:16:27.648475Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2020-12-02T13:16:27.648935Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2020-12-02T13:16:27.648965Z 0 [Note] C:\laragon\bin\mysql\mysql-5.7.24-winx64\bin\mysqld (mysqld 5.7.24) starting as process 17916 ...
+2020-12-02T13:22:47.655771Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2020-12-02T13:22:47.656794Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2020-12-02T13:22:47.656824Z 0 [Note] C:\laragon\bin\mysql\mysql-5.7.24-winx64\bin\mysqld (mysqld 5.7.24) starting as process 9452 ...
+2020-12-02T14:41:50.058436Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2020-12-02T14:41:50.059212Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2020-12-02T14:41:50.059262Z 0 [Note] C:\laragon\bin\mysql\mysql-5.7.24-winx64\bin\mysqld (mysqld 5.7.24) starting as process 15412 ...
+2020-12-02T14:50:33.348582Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2020-12-02T14:50:33.349056Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2020-12-02T14:50:33.349071Z 0 [Note] C:\laragon\bin\mysql\mysql-5.7.24-winx64\bin\mysqld (mysqld 5.7.24) starting as process 20820 ...
+2020-12-02T14:50:43.364046Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2020-12-02T14:50:43.364231Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2020-12-02T14:50:43.364242Z 0 [Note] C:\laragon\bin\mysql\mysql-5.7.24-winx64\bin\mysqld (mysqld 5.7.24) starting as process 19724 ...
+2020-12-02T14:50:43.383469Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2020-12-02T14:50:43.384031Z 0 [Note] InnoDB: Uses event mutexes
+2020-12-02T14:50:43.384349Z 0 [Note] InnoDB: _mm_lfence() and _mm_sfence() are used for memory barrier
+2020-12-02T14:50:43.384859Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2020-12-02T14:50:43.385497Z 0 [Note] InnoDB: Number of pools: 1
+2020-12-02T14:50:43.385893Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2020-12-02T14:50:43.388285Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2020-12-02T14:50:43.393678Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2020-12-02T14:50:43.411017Z 0 [ERROR] InnoDB: Only one log file found.
+2020-12-02T14:50:43.411384Z 0 [ERROR] InnoDB: Plugin initialization aborted with error not found
+2020-12-02T14:50:43.613252Z 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2020-12-02T14:50:43.613746Z 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2020-12-02T14:50:43.614229Z 0 [ERROR] Failed to initialize builtin plugins.
+2020-12-02T14:50:43.614694Z 0 [ERROR] Aborting
+
+2020-12-02T14:50:43.614961Z 0 [Note] Binlog end
+2020-12-02T14:50:43.615252Z 0 [Note] Shutting down plugin 'CSV'
+2020-12-02T14:50:43.622224Z 0 [Note] C:\laragon\bin\mysql\mysql-5.7.24-winx64\bin\mysqld: Shutdown complete
+
+2020-12-02T14:52:21.066875Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2020-12-02T14:52:21.067320Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2020-12-02T14:52:21.067333Z 0 [Note] C:\laragon\bin\mysql\mysql-5.7.24-winx64\bin\mysqld (mysqld 5.7.24) starting as process 11260 ...
+2020-12-02T14:52:31.098950Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2020-12-02T14:52:31.099150Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2020-12-02T14:52:31.099163Z 0 [Note] C:\laragon\bin\mysql\mysql-5.7.24-winx64\bin\mysqld (mysqld 5.7.24) starting as process 12844 ...
+2020-12-02T14:52:31.118745Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2020-12-02T14:52:31.119288Z 0 [Note] InnoDB: Uses event mutexes
+2020-12-02T14:52:31.119624Z 0 [Note] InnoDB: _mm_lfence() and _mm_sfence() are used for memory barrier
+2020-12-02T14:52:31.120158Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2020-12-02T14:52:31.120813Z 0 [Note] InnoDB: Number of pools: 1
+2020-12-02T14:52:31.121215Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2020-12-02T14:52:31.123421Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2020-12-02T14:52:31.129059Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2020-12-02T14:52:31.147980Z 0 [ERROR] InnoDB: Only one log file found.
+2020-12-02T14:52:31.148348Z 0 [ERROR] InnoDB: Plugin initialization aborted with error not found
+2020-12-02T14:52:31.350565Z 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2020-12-02T14:52:31.351018Z 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2020-12-02T14:52:31.351483Z 0 [ERROR] Failed to initialize builtin plugins.
+2020-12-02T14:52:31.351864Z 0 [ERROR] Aborting
+
+2020-12-02T14:52:31.352115Z 0 [Note] Binlog end
+2020-12-02T14:52:31.352387Z 0 [Note] Shutting down plugin 'CSV'
+2020-12-02T14:52:31.359231Z 0 [Note] C:\laragon\bin\mysql\mysql-5.7.24-winx64\bin\mysqld: Shutdown complete
+
