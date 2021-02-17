@@ -1,10 +1,34 @@
-<!doctype html>
+<?php
+/* Smarty version 3.1.34-dev-7, created on 2021-02-17 10:25:51
+  from 'C:\Users\Aurel509\Documents\IUT\TPWEB\Serv_TP3\templates\index.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.34-dev-7',
+  'unifunc' => 'content_602cef2f295413_13826407',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'e6f7c562cfd5dbade46c7f8831b69ff0128a235c' => 
+    array (
+      0 => 'C:\\Users\\Aurel509\\Documents\\IUT\\TPWEB\\Serv_TP3\\templates\\index.tpl',
+      1 => 1613557548,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_602cef2f295413_13826407 (Smarty_Internal_Template $_smarty_tpl) {
+?><!doctype html>
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/vader/jquery-ui.css">
-        <title>{$title}</title>
+        <title><?php echo $_smarty_tpl->tpl_vars['title']->value;?>
+</title>
     </head>
 
     <body>
@@ -23,11 +47,18 @@
     </body>
 
 
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <?php echo '<script'; ?>
+ src="https://code.jquery.com/jquery-1.12.4.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="https://code.jquery.com/jquery-3.5.1.js"><?php echo '</script'; ?>
+>
 
-    <script>
+    <?php echo '<script'; ?>
+>
 
         $( function vérification() {
             console.info("jQuery chargé ")
@@ -59,7 +90,9 @@
     
         }
 
-    </script>
+    <?php echo '</script'; ?>
+>
 
 
-</html>
+</html><?php }
+}
