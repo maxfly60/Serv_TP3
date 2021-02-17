@@ -47,7 +47,6 @@ Flight::route('GET /username/test/@name', function($name){
 // EXERCICE 2 - Partie PHP
 
 Flight::route('GET /style', function(){     
-    //Flight::render("templates/style.tpl", array("title"=>"Style"));
 
     $db = Flight::get('db');
     $verif = Flight::request()->query['NameStyle']."%";
@@ -60,7 +59,27 @@ Flight::route('GET /style', function(){
 });
 
 
+Flight::route('GET /communes/@code', function($code){
+    $db = Flight::get('db');
+    $requete = $db->prepare("SELECT NomCommune FROM Commune WHERE CodePostal=:CodePostal");
+    $requete -> execute(array(':CodePostal' => "$code"));
+    $NomCommunes = $requete -> fetchAll();
+  
+    if(empty($NomCommunes)){
+        Flight::json(array());
+    }
+    else {
 
+        $tab=array();
+
+        foreach($NomCommunes as $Commune){
+            $tab[]=$Commune[0];
+        }
+
+        Flight::json($tab);
+    
+    }
+});
 
 Flight::route('GET /', function(){
     Flight::render("templates/index.tpl", array("title"=>"Home"));

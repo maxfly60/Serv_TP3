@@ -103,8 +103,10 @@
                     });
                     
                 })
+                liste = document.getElementsByTagName("input")
+                console.log(liste);
                 if(communes.length == 0){
-                    $('#communes input').prop( "disabled", true );
+                    $('#communes input#commune').prop( "disabled", true );
                 }
                 $('#communes span').hide()
 
