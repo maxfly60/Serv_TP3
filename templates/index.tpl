@@ -97,17 +97,20 @@
             }else{
                 $.getJSON("../communes/" + $('#communes input').val().trim(), function(communes) {
                  console.log(communes);
+
+                    if(communes.length == 0){
+                        $('#communes input#commune').prop("disabled", true );
+                    } else {
+                        $('#communes input#commune').prop("disabled", false );
+                    }
+
                     $('#communes input').autocomplete({
                     autoSelect: true,
                     source:communes
                     });
                     
                 })
-                liste = document.getElementsByTagName("input")
-                console.log(liste);
-                if(communes.length == 0){
-                    $('#communes input#commune').prop( "disabled", true );
-                }
+
                 $('#communes span').hide()
 
             }
