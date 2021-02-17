@@ -50,11 +50,11 @@ Flight::route('GET /style', function(){
 
     $db = Flight::get('db');
     $verif = Flight::request()->query['NameStyle']."%";
-    $requete_2 = $db->prepare('SELECT NomStyle FROM Style WHERE NomStyle LIKE ?');
-    $requete_2->execute(array($verif));
-    $donnees = $requete_2 ->fetchAll(PDO::FETCH_COLUMN, 'NameStyle');
+    $requete = $db->prepare('SELECT NomStyle FROM Style WHERE NomStyle LIKE ?');
+    $requete->execute(array($verif));
+    $data = $requete ->fetchAll(PDO::FETCH_COLUMN, 'NameStyle');
 
-    Flight::json($donnees);
+    Flight::json($data);
 
 });
 

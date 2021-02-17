@@ -37,7 +37,7 @@
 
     <script>
 
-        $( function vérification() {
+        $(function vérification() {
             console.info("jQuery chargé ")
             console.info($('#username input').blur(vUsername).keyup(vUsername))
             console.info($('#style input').blur(vStyle).keyup(vStyle))
@@ -88,7 +88,9 @@
             
     
         }
-        //MARCHE QU'A 70% 
+        //MARCHE QU'A 95% 
+        /*
+        */
         function vCommunes()
         {
             if($('#communes input').val().trim()===''){
@@ -97,24 +99,22 @@
             }else{
                 $.getJSON("../communes/" + $('#communes input').val().trim(), function(communes) {
                  console.log(communes);
-
                     if(communes.length == 0){
-                        $('#communes input#commune').prop("disabled", true );
+                        $('#communes input#commune').prop("disabled", true);
                     } else {
-                        $('#communes input#commune').prop("disabled", false );
+                        $('#communes input#commune').prop("disabled", false);
                     }
 
-                    $('#communes input').autocomplete({
-                    autoSelect: true,
-                    source:communes
+
+                    $('#communes input#commune').autocomplete({
+                        source:communes
                     });
-                    
                 })
 
                 $('#communes span').hide()
 
             }
-            
+
     
         }
 

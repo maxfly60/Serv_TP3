@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2021-02-17 13:49:45
+/* Smarty version 3.1.34-dev-7, created on 2021-02-17 18:00:36
   from 'C:\Users\Aurel509\Documents\IUT\TPWEB\Serv_TP3\templates\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_602d1ef991f842_02341285',
+  'unifunc' => 'content_602d59c40a2e97_68959359',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e6f7c562cfd5dbade46c7f8831b69ff0128a235c' => 
     array (
       0 => 'C:\\Users\\Aurel509\\Documents\\IUT\\TPWEB\\Serv_TP3\\templates\\index.tpl',
-      1 => 1613569782,
+      1 => 1613584579,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_602d1ef991f842_02341285 (Smarty_Internal_Template $_smarty_tpl) {
+function content_602d59c40a2e97_68959359 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html>
     <head>
@@ -65,7 +65,7 @@ function content_602d1ef991f842_02341285 (Smarty_Internal_Template $_smarty_tpl)
     <?php echo '<script'; ?>
 >
 
-        $( function vérification() {
+        $(function vérification() {
             console.info("jQuery chargé ")
             console.info($('#username input').blur(vUsername).keyup(vUsername))
             console.info($('#style input').blur(vStyle).keyup(vStyle))
@@ -116,7 +116,9 @@ function content_602d1ef991f842_02341285 (Smarty_Internal_Template $_smarty_tpl)
             
     
         }
-        //MARCHE QU'A 70% 
+        //MARCHE QU'A 95% 
+        /*
+        */
         function vCommunes()
         {
             if($('#communes input').val().trim()===''){
@@ -125,21 +127,22 @@ function content_602d1ef991f842_02341285 (Smarty_Internal_Template $_smarty_tpl)
             }else{
                 $.getJSON("../communes/" + $('#communes input').val().trim(), function(communes) {
                  console.log(communes);
-                    $('#communes input').autocomplete({
-                    autoSelect: true,
-                    source:communes
+                    if(communes.length == 0){
+                        $('#communes input#commune').prop("disabled", true);
+                    } else {
+                        $('#communes input#commune').prop("disabled", false);
+                    }
+
+
+                    $('#communes input#commune').autocomplete({
+                        source:communes
                     });
-                    
                 })
-                liste = document.getElementsByTagName("input")
-                console.log(liste);
-                if(communes.length == 0){
-                    $('#communes input#commune').prop( "disabled", true );
-                }
+
                 $('#communes span').hide()
 
             }
-            
+
     
         }
 
