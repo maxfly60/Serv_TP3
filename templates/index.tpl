@@ -18,6 +18,7 @@
         <h1>Exercice 2</h1>
         <div id="style">
             <label>Style :</label>
+            <p></p>
             <input type="text" placeholder ="Style"/>
         </div>
     </body>
@@ -25,14 +26,14 @@
 
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    {*<script src="https://code.jquery.com/jquery-3.5.1.js"></script>*}
 
     <script>
 
         $( function vérification() {
             console.info("jQuery chargé ")
             console.info($('#username input').blur(vUsername).keyup(vUsername))
-    //        console.info($('#style input').blur(vStyle).keyup(vStyle))
+            console.info($('#style input').blur(vStyle).keyup(vStyle))
         })
 
         function vUsername()
@@ -53,6 +54,27 @@
 
                 })
                 $('#username span').hide()
+
+            }
+            
+    
+        }
+
+        function vStyle()
+        {        
+            if($('#style input').val().trim()===''){
+                $('#style span').show()
+                return false
+            }else{
+                $.getJSON("../style", $('#style input').val().trim(), function(doexist) 
+                {
+                    console.log(doexist);
+
+                    $('#style input').autocomplete({
+                    source:doexist
+                    });
+                })
+                $('#style span').hide()
 
             }
             
