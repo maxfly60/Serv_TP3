@@ -44,12 +44,26 @@ Flight::route('GET /username/test/@name', function($name){
 });
 
 
+// EXERCICE 2 - Partie PHP
+
+Flight::route('GET /style', function(){     
+    //Flight::render("templates/style.tpl", array("title"=>"Style"));
+
+    $db = Flight::get('db');
+    $verif = Flight::request()->query['NameStyle']."%";
+    $requete_2 = $db->prepare('SELECT NomStyle FROM Style WHERE NomStyle LIKE ?');
+    $requete_2->execute(array($verif));
+    $donnees = $requete_2 ->fetchAll(PDO::FETCH_COLUMN, 'NameStyle');
+
+    Flight::json($donnees);
+
+});
+
+
+
+
 Flight::route('GET /', function(){
     Flight::render("templates/index.tpl", array("title"=>"Home"));
 
 });
 
-Flight::route('GET /styles', function(){
-    Flight::render("templates/styles.tpl", array("title"=>"styles"));
-
-});
