@@ -18,8 +18,15 @@
         <h1>Exercice 2</h1>
         <div id="style">
             <label>Style :</label>
-            <p></p>
             <input type="text" placeholder ="Style"/>
+        </div>
+        <h1>Exercice 3</h1>
+        <div id="communes">
+            <label>Code postal :</label>
+            <input id="code" type="text" placeholder ="Code Postal"/>
+            <label>Commune :</label>
+            <input id="commune" type="text" placeholder ="Commune"/>
+            <p></p>
         </div>
     </body>
 
@@ -34,6 +41,7 @@
             console.info("jQuery chargé ")
             console.info($('#username input').blur(vUsername).keyup(vUsername))
             console.info($('#style input').blur(vStyle).keyup(vStyle))
+            console.info($('#communes input').blur(vCommunes).keyup(vCommunes))
         })
 
         function vUsername()
@@ -60,21 +68,45 @@
     
         }
 
-        function vStyle()
-        {        
+        function vStyle(){     
+
             if($('#style input').val().trim()===''){
                 $('#style span').show()
                 return false
-            }else{
-                $.getJSON("../style", $('#style input').val().trim(), function(doexist) 
+            } else {
+                $.getJSON("../style", $('#style input').val().trim(), function(style) 
                 {
-                    console.log(doexist);
+                    console.log(style);
 
                     $('#style input').autocomplete({
-                    source:doexist
+                    source:style
                     });
                 })
                 $('#style span').hide()
+
+            }
+            
+    
+        }
+        //MARCHE QU'A 70% 
+        function vCommunes()
+        {
+            if($('#communes input').val().trim()===''){
+                $('#communes span').show()
+                return false
+            }else{
+                $.getJSON("../communes/" + $('#communes input').val().trim(), function(communes) {
+                 console.log(communes);
+                    $('#communes input').autocomplete({
+                    autoSelect: true,
+                    source:communes
+                    });
+                    
+                })
+                if(communes.length == 0){
+                    $('#communes input').prop( "disabled", true );
+                }
+                $('#communes span').hide()
 
             }
             
